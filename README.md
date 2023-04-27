@@ -1,24 +1,18 @@
-# my-tree
+### 属性
 
-## Project setup
-```
-npm install
-```
+| 参数     | 说明                                                 | 类型   | 可选值 | 默认值 |
+| -------- | ---------------------------------------------------- | ------ | ------ | ------ |
+| data     | 展示数据                                             | array  | 必选   | []     |
+| nodeKey  | 每个树节点用来作为唯一标识的属性，整棵树应该是唯一的 | string | 可选   | id     |
+| labelKey | 每个树节点展示文本的属性                             | string | 可选   | label  |
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 事件
 
-### Compiles and minifies for production
-```
-npm run build
-```
+| 方法名     | 说明               | 参数                                         |
+| ---------- | ------------------ | -------------------------------------------- |
+| node-click | 节点被点击时的回调 | 传递给 `data` 属性的数组中该节点所对应的对象 |
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
